@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>VitalArcadeVR</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="icon" href="https://gonzalobartual.com/wp-content/uploads/2024/02/grad.png" type="image/png"> 
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="https://kit.fontawesome.com/c0362f2eea.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #02b2f5 !important;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="">
+                    <h1><img height="80" src="{{ url_for('static', filename='images/VirtualArcadeVR.png') }}" title="GradUp Logo-p"/><span class="h11">Vital</span><span class="h12">Arcade</span><span class="h13">VR</span></h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv">
+                                <i class="fa-solid fa-scroll"></i> Contact Us
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-gamepad"></i> Mini games
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="senior-container">
+            <img src="{{ url_for('static', filename='images/seniorVR.png') }}" alt="SeniorVR" style="width:100%;">
+            <div class="bottom-left">
+                <h1 class="senior-h1">Digital Exercise and Rehabilitation for Elderly Individuals.</h1>
+                <span class="senior-desc">VitalArcade is not just a game; it also serves as a means to maintain the psychomotor activity of older adults and introduce them to new technologies.</span><br/>
+                <button class="senior-contact">Contact</button>
+            </div>
+        </div>
+        <div class="games">
+            <div class="game">
+                <div class="game-desc">
+                    <span class="game-item">01</span>
+                    <h1 class="game-title">Mole smasher</h1>
+                    <div class="game-text">
+                        Playing the Mole Smasher minigame can significantly enhance hand-eye coordination and reaction times, as players must quickly identify and target moles popping up in random locations. This engaging and fast-paced game also helps improve visual scanning and precision, making it a fun way to sharpen cognitive and motor skills.
+                    </div>
+                </div>
+                <div class="game-img">
+                    <img src="{{ url_for('static', filename='gif/WhatsAppVideo2024-03-16at11.34.08-ezgif.com-optimize.gif') }}" alt="VRGame1" style="width:100%; height: fit-content;">
+                </div>
+            </div>
+        </div>
+        <div class="use-cases">
+            <div class="use-case">
+                <div class="at-nursing-img">
+                    <img src="{{ url_for('static', filename='images/atnursing.jpg') }}" alt="NursingHome" style="width:100%; border-radius: 25px;" >
+                </div>
+                <div class="at-nursing-desc">
+                    <h1 class="at-h1"> <strong>VitalArcadeVR</strong><span style="margin-left: 0.5em;"></span> at Nursing Homes</h1>
+                    <p class="at-desc">Unlock a World of Fun and Fitness and Elevate the quality of life for seniors in residential communities. Designed specifically for older adults, VitalArcade offers a dynamic and engaging way to enhance mental acuity, sharpen attention, and improve physical conditioning.</p>
+                    <p class="at-desc">Seniors can embark on exciting adventures, tackle brain-teasing puzzles, and participate in immersive games designed to stimulate the mind and body. From memory challenges that exercise cognitive functions to interactive experiences that promote hand-eye coordination and balance.</p>
+
+                </div>
+            </div>
+            <div class="use-case">
+                <div class="at-home-desc">
+                    <h1 class="at-h1"> <strong>VitalArcadeVR</strong><span style="margin-left: 0.5em;"></span> at Home</h1>
+                    <p class="at-desc1">Improve your mental agility, strength and keep fit while you play our games from the comfort of your house. Experience the future of entertainment and immersive technology without ever leaving your living room.
+                    </p>
+                    <p class="at-desc2">We consider ourself a good oportunity to fill the lonely hours with healthy and restorative experiences. Plus, with the convenience of home VR, you have the freedom to dive into immersive experiences whenever and wherever you want. But perhaps the most compelling reason to embrace home VR is the sheer sense of wonder and joy it brings  </p>
+                </div>
+                <div class="at-home-img">
+                    <img src="{{ url_for('static', filename='images/athome.jpg') }}" alt="AtHome" style="width:100%; border-radius: 25px;">
+                </div>
+            </div>
+        </div>
+        <div class="benefits-exercise">
+
+        </div>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top" style="background-color: #02b2f5 !important; margin: 0 !important; padding-top: 35px !important; padding-bottom: 35px !important;">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+              <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+            </div>
+        
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
